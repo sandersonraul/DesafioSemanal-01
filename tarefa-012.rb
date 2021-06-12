@@ -1,18 +1,14 @@
-def torreDeHanoi(n,o,d,aux)
-  if n == 1
-    puts "Mover disco de torre #{o} para torre #{d}"
-  else
-    torreDeHanoi(n-1,o,aux,d)
-    puts "Mover disco de torre #{o} para torre #{d}"
-    torreDeHanoi(n-1,aux,d,o)
-  end
+def torreDeHanoi(discos)
+    puts "Quantidade de movimentos necessários: #{p = (discos**2)-1}"
 end
 
-puts "Informe a quantidade de discos: "
-discos = gets.chomp.to_i
-torreDeHanoi(discos,1,3,2)
-if discos == 3
-  puts "Quantidade de movimentos necessários #{p = (discos**2)-2}"
-else
-  puts "Quantidade de movimentos necessários #{p = (discos**2)-1}"
-end
+loop do
+  puts "Informe a quantidade de discos: "
+  discos = gets.chomp.to_i
+  if discos == 0
+    puts "Zero não é permitido. Tente novamente"
+  else
+    torreDeHanoi(discos)
+  end
+  break if discos!=0
+end 
