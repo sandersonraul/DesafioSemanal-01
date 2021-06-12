@@ -1,5 +1,4 @@
 dataNascimento = "17/01/1999"
-p = dataNascimento.split("/")
 i=0
 cont = 0
 while i < dataNascimento.length do
