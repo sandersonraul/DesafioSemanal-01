@@ -1,5 +1,5 @@
 def torreDeHanoi(discos)
-    puts "Quantidade de movimentos necessários: #{p = (discos**2)-1}"
+    puts "Quantidade de movimentos necessários: #{p = (2**discos)-1}"
 end
 
 loop do
